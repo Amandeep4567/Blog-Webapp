@@ -38,8 +38,8 @@
 }
 .content {
   max-width: 100%;
-  margin: 40px auto;
-  padding: 20px;
+  /* margin: 20px auto; */
+  /* padding: 20px; */
 }
 
 .content .home h2 {
@@ -63,11 +63,16 @@
   margin-bottom: 8px;
 }
 
+.blog-preview p {
+  font-size: 20px;
+}
+
 .blog-preview a {
   text-decoration: none;
 }
 
 /* blog details page */
+
 .blog-details h2 {
   font-size: 20px;
   color: #f1356d;
@@ -85,6 +90,58 @@
   padding: 8px;
   border-radius: 8px;
   cursor: pointer;
+}
+
+/* blog list */
+
+.all-blogs-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.blog-list .blog-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blog-description {
+  width: 600px;
+  margin-right: 130px;
+}
+
+.blog-description p {
+  font-size: 20px;
+  text-align: justify;
+  padding-top: 20px;
+}
+
+.blog-description h1 {
+  font-size: 42px;
+}
+
+.blog-description h3 {
+  font-size: 28px;
+}
+
+.blog-description span {
+  color: #f1356d;
+}
+
+.blogs-listing {
+  margin-left: 130px;
+}
+
+.blogs-listing button {
+  background: #f1356d;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-left: 150px;
 }
 
 /* create new blog form */
@@ -143,6 +200,14 @@
 }
 .not-found .message-404 a {
   font-size: 20px;
+}
+.loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  font-weight: 800;
 }
 body {
   background-color: #000000;
